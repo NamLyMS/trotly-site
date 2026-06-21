@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trotly — Walk &amp; Run with Fun Sounds</title>
+<meta name="description" content="Trotly turns every walk and run into a playful adventure with pace-based animal sounds, lively ambiance, and live tracking of speed, distance, and time." />
+<style>
+  :root {
+    --bg: #0f1226;
+    --bg-2: #161a3a;
+    --card: #1d2147;
+    --text: #f5f6ff;
+    --muted: #b7bce0;
+    --accent: #6c7bff;
+    --accent-2: #36d1a0;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, var(--bg-2), var(--bg));
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 72px 20px 40px;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+  .logo .dot {
+    width: 38px; height: 38px; border-radius: 11px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: inline-block;
+  }
+  header h1 {
+    font-size: clamp(34px, 6vw, 58px);
+    line-height: 1.1;
+    margin: 28px 0 14px;
+    background: linear-gradient(120deg, #fff, var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header p.tagline {
+    font-size: clamp(17px, 2.4vw, 21px);
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto 28px;
+  }
+  .cta {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 999px;
+    font-weight: 700;
+    color: #0c0f24;
+    background: linear-gradient(135deg, var(--accent-2), var(--accent));
+    box-shadow: 0 10px 30px rgba(108,123,255,0.35);
+  }
+  .cta:hover { text-decoration: none; transform: translateY(-1px); }
+
+  /* Sections */
+  section { padding: 48px 0; }
+  h2 {
+    font-size: clamp(24px, 4vw, 34px);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--muted);
+    max-width: 620px;
+    margin: 0 auto 36px;
+  }
+
+  /* Features */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+  }
+  .feature {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+    padding: 26px;
+  }
+  .feature .emoji { font-size: 30px; }
+  .feature h3 { margin: 12px 0 8px; font-size: 19px; }
+  .feature p { color: var(--muted); font-size: 15px; }
+
+  /* Screenshots */
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 26px;
+    justify-items: center;
+  }
+  .shot {
+    text-align: center;
+  }
+  .shot img {
+    width: 100%;
+    max-width: 260px;
+    border-radius: 28px;
+    border: 6px solid #0b0e22;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+    background: #000;
+  }
+  .shot figcaption {
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 50px 20px 70px;
+    color: var(--muted);
+    border-top: 1px solid rgba(255,255,255,0.07);
+    margin-top: 30px;
+  }
+  footer .links { margin-bottom: 14px; }
+  footer .links a { margin: 0 12px; }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <div class="logo"><span class="dot"></span> Trotly</div>
+      <h1>Walk &amp; run with fun sounds</h1>
+      <p class="tagline">
+        Turn every walk into play. Trotly cheers you on with playful animal
+        sounds when you slow down and lively ambiance when you speed up — while
+        tracking your pace, distance, and time.
+      </p>
+      <a class="cta" href="#download">Get Trotly</a>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>Why you'll love Trotly</h2>
+      <p class="section-sub">A fresh, fun way to stay motivated and keep moving.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="emoji">🐾</div>
+          <h3>Move to the rhythm</h3>
+          <p>Trotly responds to your speed and plays the right sound at the right moment, so every step feels rewarding.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">🦁</div>
+          <h3>Friendly motivation</h3>
+          <p>Hear cheerful animal sounds — cat, dog, lion, tiger, dinosaur and more — whenever your pace dips below your goal.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">⚡️</div>
+          <h3>Energy when you need it</h3>
+          <p>Lively background ambiance kicks in when you speed up, helping you keep your momentum going.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">🎚️</div>
+          <h3>Set your own pace</h3>
+          <p>Choose the exact speed threshold that decides when sounds play, so Trotly matches your fitness level.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">📊</div>
+          <h3>Track everything live</h3>
+          <p>Real-time speed, distance, elapsed time, and top speed, with an animated figure that moves faster as you do.</p>
+        </div>
+        <div class="feature">
+          <div class="emoji">🔒</div>
+          <h3>Privacy you control</h3>
+          <p>Your activity stays on your device, and optional sharing is clearly labeled and entirely your choice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots">
+    <div class="wrap">
+      <h2>See Trotly in action</h2>
+      <p class="section-sub">Captured on iPhone 17 Pro Max.</p>
+      <div class="shots">
+        <figure class="shot">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20Max%20-%202026-06-10%20at%2023.57.12.png" alt="Trotly tracking screen" />
+          <figcaption>Live workout tracking</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20Max%20-%202026-06-10%20at%2023.57.37.png" alt="Trotly sound settings" />
+          <figcaption>Pace-based sounds</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20Max%20-%202026-06-10%20at%2023.57.48.png" alt="Trotly dashboard" />
+          <figcaption>Your progress dashboard</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20Max%20-%202026-06-10%20at%2023.58.48.png" alt="Trotly menu" />
+          <figcaption>Menu &amp; settings</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20Max%20-%202026-06-10%20at%2023.58.59.png" alt="Trotly about and help" />
+          <figcaption>About &amp; help</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap" style="text-align:center;">
+      <h2>Ready to get moving?</h2>
+      <p class="section-sub">Lace up, press Start, and let the sounds carry you forward.</p>
+      <a class="cta" href="#">Download on the App Store</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="privacy.md">Privacy Policy</a>
+      <a href="support.md">Support</a>
+      <a href="mailto:support@trotly.app">Contact</a>
+    </div>
+    <div>© 2026 Trang Tran · Trotly. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
