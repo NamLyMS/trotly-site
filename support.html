@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — Trotly</title>
+<meta name="description" content="Trotly support: getting started, how the app works, frequently asked questions, and how to contact us." />
+<style>
+  :root {
+    --bg: #0f1226;
+    --bg-2: #161a3a;
+    --card: #1d2147;
+    --text: #f5f6ff;
+    --muted: #b7bce0;
+    --accent: #6c7bff;
+    --accent-2: #36d1a0;
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, var(--bg-2), var(--bg));
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 56px 20px 24px;
+  }
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--text);
+  }
+  .logo:hover { text-decoration: none; }
+  .logo .dot {
+    width: 32px; height: 32px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: inline-block;
+  }
+
+  /* Article card */
+  .doc {
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: var(--radius);
+    padding: clamp(24px, 5vw, 48px);
+    margin: 16px 0 48px;
+  }
+  .doc h1 {
+    font-size: clamp(28px, 5vw, 40px);
+    line-height: 1.15;
+    margin-bottom: 8px;
+    background: linear-gradient(120deg, #fff, var(--muted));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .doc .lede {
+    color: var(--muted);
+    font-size: 17px;
+    margin-bottom: 24px;
+  }
+  .doc hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin: 24px 0;
+  }
+  .doc h2 {
+    font-size: clamp(19px, 3vw, 23px);
+    margin: 32px 0 12px;
+  }
+  .doc p { color: var(--muted); margin-bottom: 14px; }
+  .doc ul, .doc ol { color: var(--muted); margin: 0 0 14px 22px; }
+  .doc li { margin-bottom: 8px; }
+  .doc strong { color: var(--text); }
+
+  .faq {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 18px;
+    margin-top: 18px;
+  }
+  .faq:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .faq .q {
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 36px 20px 60px;
+    color: var(--muted);
+    border-top: 1px solid rgba(255,255,255,0.07);
+  }
+  footer .links { margin-bottom: 14px; }
+  footer .links a { margin: 0 12px; }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <a class="logo" href="trotly.html"><span class="dot"></span> Trotly</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="doc">
+      <h1>Trotly Support</h1>
+      <p class="lede">
+        Welcome to Trotly support! Below you'll find help on getting started, answers to
+        common questions, and how to contact us.
+      </p>
+
+      <hr />
+
+      <h2>Getting Started</h2>
+      <ol>
+        <li><strong>Start a workout</strong> — Open Trotly and tap <strong>Start</strong> on the Tracking screen to begin measuring your walk or run.</li>
+        <li><strong>Pick a sound</strong> — Choose a fun animal sound (cat, dog, lion, tiger, dinosaur, and more) that plays when you slow down.</li>
+        <li><strong>Set your speed threshold</strong> — Use the slider to choose the speed that decides when sounds play, so Trotly matches your pace.</li>
+        <li><strong>Connect headphones</strong> — Pair your Bluetooth headphones or speaker so you can hear sounds and ambiance while you move.</li>
+        <li><strong>Stop anytime</strong> — Tap <strong>Stop</strong> to end the session. Your workout is saved to the Dashboard.</li>
+      </ol>
+
+      <h2>How Trotly Works</h2>
+      <ul>
+        <li><strong>Animal sound when slow</strong> — When your speed drops below your chosen threshold, Trotly plays your selected animal sound to nudge you to pick up the pace.</li>
+        <li><strong>Ambiance when fast</strong> — When you move above the threshold, lively background ambiance kicks in to keep your momentum going.</li>
+        <li><strong>Live metrics</strong> — The Tracking screen shows your time, current speed, distance, and top speed in real time, with an animated figure that moves faster as you do.</li>
+        <li><strong>Dashboard</strong> — Review your past walks and runs and track your progress over time.</li>
+      </ul>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <p class="q">Why does Trotly need my location?</p>
+        <p>
+          Trotly uses GPS to measure your speed, distance, and time. Background location
+          lets tracking continue when your screen is off or the app isn't active.
+        </p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Why does Trotly use Bluetooth?</p>
+        <p>
+          Only to connect to your headphones or speaker so you can hear the sounds and
+          ambiance. Trotly does not scan for or collect data about other devices.
+        </p>
+      </div>
+
+      <div class="faq">
+        <p class="q">No sound is playing — what should I check?</p>
+        <ul>
+          <li>Make sure your headphones/speaker are connected.</li>
+          <li>Confirm the "Animal sound when slow" or "Ambiance when fast" toggle is on.</li>
+          <li>Check that your device volume is up and not in silent mode.</li>
+          <li>Verify your speed is above/below the threshold as expected.</li>
+        </ul>
+      </div>
+
+      <div class="faq">
+        <p class="q">My speed or distance looks off.</p>
+        <p>
+          GPS accuracy can vary indoors or among tall buildings. For best results, use
+          Trotly outdoors with a clear view of the sky.
+        </p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Does Trotly work in the background?</p>
+        <p>
+          Yes. Tracking and audio continue when the app is in the background, as long as
+          you've granted background location permission.
+        </p>
+      </div>
+
+      <div class="faq">
+        <p class="q">Is my data private?</p>
+        <p>
+          Your activity history stays on your device. Optional data sharing is off by
+          default and fully under your control. See our
+          <a href="privacy.html">Privacy Policy</a> for details.
+        </p>
+      </div>
+
+      <h2>Contact Us</h2>
+      <p>Need more help or have feedback? We'd love to hear from you.</p>
+      <p><strong>Email:</strong> <a href="mailto:tranthutrang1985@gmail.com">tranthutrang1985@gmail.com</a></p>
+      <p>We aim to respond within a few business days.</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="trotly.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:tranthutrang1985@gmail.com">Contact</a>
+    </div>
+    <div>© 2026 Trang Tran · Trotly. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
